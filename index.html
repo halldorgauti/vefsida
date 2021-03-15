@@ -123,6 +123,10 @@
 											<a href="#kerftest" class="image fit"><img src="images/vefsidugerd.jpg" alt="" style="border-radius: 10px"></a>
 										</div>
 
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#3dprentun" class="image fit"><img src="images/vefsidugerd.jpg" alt="" style="border-radius: 10px"></a>
+										</div>
+
 									</div>
 								</section>
 							</article>
@@ -492,6 +496,281 @@
 							Fjarlægð frá tíunda kassa að enda er mæld sem 2,28 mm.
 							Lokaniðurstöður eru því 2.28/11 = 0,21 mm kerf fyrir þann leiserskera sem við notuðum.
 						</p>
+
+
+
+
+
+					</article>
+
+
+
+					<article id="3dprentun" class="panel">
+
+						<header>
+							<h2>
+								3D Prentun og Skönnun
+							</h2>
+						</header>
+								<p> Hér mun ég fara yfir hvernig ég hannaði og 3D prentaði Apple TV stand, ásamt því að 3D skanna styttu. Þetta verkefni var unnið í áfanganum Framleiðsluferli í HÍ.
+										Tilgangur verkefnisins er að kynnast framleiðsluferlum sem tengjast 3D hönnun.
+								</p>
+								<h3>Hvatning</h3>
+								 <p>
+									 Apple TV græjan heima var keypt fyrir nokkrum árum og er staðsett hátt uppi á sjónvarpi í eldhúsinu.
+									 Þar sem það hefur ekki verið útbúinn neinn staður fyrir hana hefur hún hangið fyrir aftan sjónvarpið með þeim afleiðingum að hafa dottið ófáum sinnum.
+									 Því datt mér í hug að þetta gæti verið tilvalið verkefni til þess að útbúa 3D prentaðan stand fyrir græjuna og koma í veg fyrir að hún skemmist.
+								 </p>
+
+								<h3>
+								 Upphaf verkefnis
+								</h3>
+								<p>
+									Ég var með góða hugmynd fyrir því hvernig ég vildi hanna standinn en sótti mér samt sem áður innblástur af netinu.
+									Eftir fáar google-leitir var fundin mynd mjög svipuð þeirri hönnun sem ég var með í huga.
+									Hönnunina má sjá á mynd hér að neðan. Hugmyndin er sú að standurinn er festur við vegg aftan við sjónvarp og snúrurnar standa uppúr honum.
+								</p>
+
+									<div class="image fit">
+									<img src="images/standurafneti.jpg" alt="">
+									</div>
+									<br>
+
+								<h3>Teikning</h3>
+
+								<p>
+									Ég notaði Fusion 360 teikniforritið til þess að útbúa CAD módelið.
+									Málin voru ákvörðuð útfrá gefnum lengdum á Apple TV sem gefnar eru á <a href="https://www.apple.com/apple-tv-4k/specs/"> heimasíðu Apple.</a>
+									Ég ákvað að gefa 3mm færslurúm á hvern kannt sem kom til með að vera meira en nóg.
+									Teikninguna má athuga hér að neðan.
+								</p>
+
+								<iframe src="https://myhi91.autodesk360.com/shares/public/SH56a43QTfd62c1cd968ef17ddb8826486a1?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+								<br>
+
+								<p>
+									Þegar teikningin var klár vistaði ég hlutinn sem .stl skrá.
+									Þá skrá opnaði ég svo í <a href="https://ultimaker.com/software/ultimaker-cura"> Ultimaker Cura</a> viðmótinu, þar er hægt að stilla og sjá hvernig 3D prentunin fer fram.
+									Ultimaker Cura hugbúnaðurinn virkar vel fyrir allar helstu gerðir prentara en er þó hannaður fyrir Ultimaker gerðirnar, ég notaði <a href="https://www.prusa3d.com/original-prusa-i3-mk3/">Prusa prentarann</a> til þess að prenta standinn.
+									Ég þurfti ekki að flækjast í mörgum stillingum fyrir prentunina þar sem hluturinn er það einfaldur.
+									Það helsta sem kom út úr <a href="https://valgeir99.github.io/valgeir/3d_printing.html">3D testinu</a> sem var framkvæmt með Valgeiri, reyndist vera mikilvægi þess að setja support fyrir 60° overhang ásmat því að hafa götin stærri en 2mm (ég notaði 3mm).
+									60° overhang hefur þó ekki mikið vægi fyrir mig þar sem hluturinn inniheldur eingöngu rétt horn.
+								<br>
+									Það sem ég stillti í Cura var:
+
+
+								<ul>
+  							<li>20% Infill til þess að tryggja burð.</li>
+  							<li>Support fyrir hankana sem standa útúr.</li>
+  							<li>0.2 í Profiles þar sem hluturinn þarf ekki að sýna nein smáatriði.</li>
+								</ul>
+
+								Eftir að hafa slice-að hlutinn í forritinu var gefinn upp 6 og hálfs tíma prentunartími og þyngd hlutarins sem 80g.
+								Það þótti mér nokkuð gott þar sem hluturinn reynist nokkuð stór.
+								</p>
+
+								<div class="image fit">
+								<img src="images/cura.PNG" alt="">
+								</div>
+								<br>
+
+								Cura skráin er svo vistuð sem G-code skrá sem Prusa prentarinn tekur við á minniskorti.
+								<br>
+								<br>
+
+								<h3>Útkoma</h3>
+								Prentunin gekk vel fyrir sig og án nokkurra vandræða. Hér má sjá ferlið og standinn beint út úr prentaranum.
+
+								<div class="image fit">
+								<img src="images/prusa.JPG" alt="">
+								</div>
+								<br>
+
+								<div class="image fit">
+								<img src="images/IMG_0057.JPG" alt="">
+								</div>
+								<br>
+
+								<div class="image fit">
+								<img src="images/IMG_0059.JPG" alt="">
+								</div>
+								<br>
+
+								<p>
+									Apple TV-ið passar nokkuð vel í standinn og ég er ánægður með útkomuna.
+									Þegar þessi skýrsla var skrifuð hefur standurinn ekki verið boraður uppá vegg þar sem það þarf að taka niður sjónvarp til að koma honum fyrir.
+									Það er þó í plönunum mjög fljótlega og ekki spurning um að hann nýtist einkar vel.
+								</p>
+								<header>
+									<h2>3D Skönnun</h2>
+								</header>
+
+								<h3>Photogrammetría</h3>
+
+								<p>
+									Ég ákvað að prófa að skanna styttur sem standa á heimili mínu og útbúa þrívítt módel með því að nota aðferð sem kallast photogrammetría.
+									Photogrammetría vikrar þannig að teknar eru fullt af myndum af hlut úr öllum mögulegum hornum sem framkallaðar eru svo í forrit eins og Meshroom.
+									<a href="https://alicevision.org/#meshroom">Meshroom</a> er sennilega vinsælasta viðmótið fyrir photogrammetríu sem er frítt í dag, það vinnur úr myndunum sem sent er í það og býr til þrívítt módel sem hægt er að skoða og vinna með á tölvu.
+								</p>
+
+								<p>
+									Þetta verkefni var ekki eins auðvelt og ég bjóst við í fyrstu miðað við mjööög einföld myndbönd eins og <a href="https://www.youtube.com/watch?v=vU6PoarLEzs&t=341s">þetta hér</a> sem ég skoðaði í fyrstu.
+									Þetta tók margar tilraunir og reyndi mjög á þolinmæði höfundar. Ég skipti því köflunum upp í tilraunir, í þeirri síðustu var loksins nothæft 3D módel fengið.
+								</p>
+
+								<h3>Fyrsta tilraun</h3>
+
+								<p>
+									Hér ákvað ég að mynda styttu af fíl sem má sjá hér að neðan.
+								</p>
+								<div class="image fit">
+								<img src="images/filamynd.jpg" alt="">
+								</div>
+								<br>
+
+								<p>
+									Ég tók með Iphone 12, 42 myndir af fílnum við mismunandi sjónarhorn og hlóð þeim upp í Meshroom og keyrði fyrir "default" stillingar.
+									Eftir að Meshroom hafði keyrt í u.þ.b. hálftíma kom upp villa.
+									Þá uppgötvaði ég það að til þess að geta keyrt Meshroom þarf að hafa sérstakt skjákort innbygt í tölvu (CUDA enabled NVIDIA GPU).
+									Því þurfti ég að leita annarra ráða.
+									Ég komst að því að hægt er að keyra Meshroom með því að nota <a href="https://colab.research.google.com/notebooks/intro.ipynb#recent=true">Google Colab</a>.
+									Með Google Colab er fengin lánuð hraðvirk tölva utan úr heimi í max 12 klst. (sem greinilega innniheldur CUDA skjákortið) sem vinnur úr kóða sem notandi býr til.
+									Ég fann eftirfarandi <a href="https://colab.research.google.com/gist/natowi/3044484ad0c98877692c399297e3ab7e/meshroomcolab.ipynb">Colab Notebook</a> sem ég gat notað til að senda mínar myndir í og keyra Meshroom.
+									Eftir sirka 2 og hálfs tíma keyrslu biðu mín hræðilegar niðurstöður.
+									Módelið sem var búið til með Meshroom var opað sem .obj skrá í <a href=https://www.meshlab.net/>Meshlab</a> og leit svona út:
+								</p>
+
+								<div class="image fit">
+								<img src="images/tilraun1.JPG" alt="">
+								</div>
+								<br>
+
+								<p>
+									Það má sjá að taflborðið heppnaðist fullkomlega en fíllinn ofan á því ekki alveg eins. Alla fætur og meginpart búks vantaði á fílinn.
+								</p>
+
+								<h3>
+									Tilraun 2
+								</h3>
+								<p>
+									Nú ákvað ég að prófa að nota betri myndavél í Canon 380d til þess að mynda sama fíl og í tilraun 1.
+									Ég stillti myndavélinni upp á þrífót og tók fleiri myndir en í tilraun 1, samtals 65 talsins af sama fíl og í tilraun 1 með aðeins öðruvísi birtu.
+									Vinnsla myndanna var eins í og tilraun 1, þ.e.a.s. sama <a href="https://colab.research.google.com/gist/natowi/3044484ad0c98877692c399297e3ab7e/meshroomcolab.ipynb">Notebook</a> notuð.
+									Eftir 3 tíma keyrslu biðu betri niðurstöður en í tilraun 1 en þó algjörlega ófullnægjandi.
+								</p>
+
+								<div class="image fit">
+								<img src="images/tilraun2_1.JPG" alt="">
+								</div>
+								<br>
+
+								<div class="image fit">
+								<img src="images/tilraun2_2.JPG" alt="">
+								</div>
+								<br>
+
+								<p>
+									Önnur hliðin heppnaðist ágætlega en hin var bara ekki til staðar
+								</p>
+
+								<h3>
+									Tilraun 3
+								</h3>
+
+								<p>
+									Hér ákvað ég að skipta um styttu með einfaldara lag sem má sjá hér:
+								</p>
+
+								<div class="image fit">
+								<img src="images/nystytta.jpg" alt="">
+								</div>
+								<br>
+
+								<p>
+									Ég setti núna dagblað undir og tók 28 myndir með Iphone, nú var ég búinn að setja upp <a href="https://halide.cam/">app</a> sem tekur myndirnar með Manual stillingum og á að greina ljós betur.
+									Ég notaði aftur Colab og Meshroom til að búa til 3D módelið.
+
+									Niðurstöðurnar enn og aftur ekki góðar:
+								</p>
+
+								<div class="image fit">
+								<img src="images/ljotstytta.JPG" alt="">
+								</div>
+								<br>
+
+								<p>
+									Eins og sjá má fæst svipuð niðurstaða og í fyrri tilraunum. Enn vantar fjölda parta á módel.
+								</p>
+
+								<h3>
+									Tilraun 4
+								</h3>
+
+								<p>
+									Nú ætlaði ég að láta þetta virka og tók með símanum í <a href="https://halide.cam/">appinu</a> yfir 400 myndir af enn einni styttunni:
+								</p>
+
+								<div class="image fit">
+								<img src="images/ennein.jpg" alt="">
+								</div>
+								<br>
+
+								<p>
+									Eftir 12 tíma vinnslu í Google Colab missti ég samband við tölvuna úti í heim þegar keyrslan var alveg að verða búin.
+									Gríðarlega gremjulegt.
+								</p>
+
+								<h3>Tilraun 5</h3>
+
+								<p>
+									Nú var ég gjörsamlega kominn með nóg af Meshroom og ákvað að skoða möguleg photogrammetríu app sem hægt er að nota beint á Iphone án þess að þurfa að bíða fjölda klukkutíma eftir keyrslu.
+									Tveir valkostir voru betri en aðrir. Fyrst ákvað ég að prófa app sem heitir <a href="https://www.scandy.co/apps/scandy-pro">Scandy Pro</a>.
+									Það notar myndavélina framan á Iphone-inum til þess að greina hlutinn, ástæðan fyrir því er að andlitsskanninn inniheldur "true depth" sem greinir þrívíddina betur.
+									Ég ákvað að prófa að búa til módel fyrir fílinn aftur. Niðurstöðurnar voru eftirfarandi:
+								</p>
+
+								<div class="image fit">
+								<img src="images/scandy.png" alt="">
+								</div>
+								<br>
+
+								<p>
+									Þetta voru án efa bestu niðurstöðurnar hingað til. Samt sem áður var upplausn módelsins ekki frábær.
+									Ég ákvað því að reyna við eitt annað app og kanna hvort hægt væri að fá betri niðurstöður.
+								</p>
+
+								<h3>
+									Tilraun 6 (bestu niðurstöður)
+								</h3>
+
+								<p>
+									Nú var notað app sem heitir <a href="https://www.qlone.pro/">Qlone</a>.
+									Það er mun einfaldara í notkun en nokkur annar hugbúnaður sem ég prófaði hér að ofan.
+									Notandi prentar út mottu sem hlutnum er komið fyrir á. Appið skynjar mottuna og teiknar ímyndaða hálfkúlu sem mynda svæði sem verða gegnsæ þegar myndavélin fer yfir.
+									Þegar öll svæðin eru orðin gegnsæ býr appið til þrívítt módel af hlutnum á undir 3 mínútum.
+									Þá er hægt að bæta módelið með því að snúa hlutnum á hlið og endurtaka ferlið.
+									Þetta skilaði lang bestu niðurstöðum sem fóru fram úr væntingum mínum.
+									Frá appinu sendi ég módelið á <a href="https://sketchfab.com">Sketchfab</a> sem hægt er að opna á tölvu og skoða.
+									Módelið má athuga hér að neðan.
+								</p>
+
+								<div class="sketchfab-embed-wrapper">
+    						<iframe title="Fíll" width="640" height="480" src="https://sketchfab.com/models/7ded104e9f934a799bbdfa38f43c9d63/embed">
+    						</iframe>
+								</div>
+
+
+								<h3>Lokaorð</h3>
+								<p>
+									Eftir að hafa prófað margar aðferðir fyrir photogremmtríu komst ég að því að <a href="https://www.qlone.pro/">Qlone</a> appið virkar lang best af öllum öðrum möguleikum.
+									Hægt er að skanna litlar styttur svipaða og fílinn sem ég notaði og útbúa 3D módel á innan við korteri.
+									Þetta er mun einfaldara og skýrara heldur en að taka handahófskenndar myndir, senda í  <a href="https://alicevision.org/#meshroom">Meshroom</a> og bíða í margar klukkustundir aðeins til að fá tilbaka gallað módel.
+									Qlone er því lang skynsamlegasti kosturinn við gerð þrívíðra módela fyrir smáar fígúrur.
+								</p>
+
+
+
+
 
 
 
