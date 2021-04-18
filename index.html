@@ -124,6 +124,12 @@
 											<a href="#3dprentun" class="image fit"><img src="images/prentogskann.jpg" alt="" style="border-radius: 10px"></a>
 										</div>
 
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#fraesir" class="image fit"><img src="images/prentogskann.jpg" alt="" style="border-radius: 10px"></a>
+										</div>
+
+
+
 									</div>
 								</section>
 							</article>
@@ -765,8 +771,297 @@
 									Qlone er því lang skynsamlegasti kosturinn við gerð þrívíðra módela fyrir smáar fígúrur.
 								</p>
 
+								</article>
 
 
+								<!-- Fræsir -->
+			<article id="fraesir" class="panel">
+				<header>
+					<h2>
+						Fræsing fyrir stóran hlut
+					</h2>
+				</header>
+						<p>
+							Í þessu verkefni var unnið að því að fræsa út krossvið til þess að hanna stóran hlut.
+							Þetta verkefni var unnið í áfanganum Framleiðsluferli í HÍ og er unnið sem partur af 2 öðrum verkefnum.
+							Þessi tvö verkefni má finna hér og hér.
+							Tilgangur verkefnisins er að kynnast framleiðsluferlum á borð við skurð og mótun með því að nota fræsi við hönnun á stórum hlut.
+						</p>
+
+						<h3>Verkefni valið</h3>
+
+						<p>
+							Þetta verkefni var unnið samhliða öðru verkefni í áfanganum sem felst í því að fræsa út mót.
+							Heildarmarkmiðið er að hanna einn stóran hlut sem tengir bæði verkefnin saman.
+						<br>
+							Eftir mikla hugmyndaleit var ákveðið að vinna því að útbúa skjalatösku.
+							Með þá hugmynd að fræsa út box úr OSB og útbúa mót fyrir handfang.
+							Fundin var mynd af interneti sem sýnir svipaða hönnun og við höfðum í huga.
+						</p>
+
+						<div class="image fit">
+						<img src="images/skjalataska.jpg" alt="">
+						</div>
+						<br>
+
+						<p>
+							Til þess að fikta aðeins meira með fræsinn ákváðum við einnig að grafa logo af górilluhaus framan á tösku, auk nöfnum okkar ofan á.
+						</p>
+
+
+						<h3>Hönnun á tösku</h3>
+
+						<p>
+							Fusion360 var notað með hjálp parametríum til þess að útbúa hráann kassa fyrir skjalatöskuna.
+							Til þess að fræðast meira um notkun á parametríum hvet ég til þess að skoða eftirfarandi <a href="#laserprentun">verkefni</a> sem ég bjó til.
+							Módelið er ekki flókið þar sem smíðin er eingöngu samsetning af nokkrum mismunandi rétthyrningum en þó er gagnlegt að rissa hlutinn upp í Fusion og athuga hvort öll hlutföll passi.
+						</p>
+
+						<div class="image fit">
+						<img src="images/kassifusion.JPG" alt="">
+						</div>
+						<br>
+
+						<div class="image fit">
+						<img src="images/parametriurkassi.JPG" alt="">
+						</div>
+						<br>
+
+						<p>
+							Meðvituð ákvörðun var tekin um það að hafa breidd boxins ekki symmetríska báðum megin heldur eins og sýnt er á mynd, hliðin sem þarf að rúma fyrir handfanginu tekur 2/3 af heildarbreiddinni.
+						</p>
+
+						<p>
+							Módelið var svo fletjað út og útlínur rétthyrninganna vistaðar sem dxf skrá.
+						</p>
+
+						<h3>Vcarve</h3>
+						<p>
+							<a href="https://www.vectric.com/products/vcarve-pro">Vcarve</a> er sniðugur hugbúnaður sem býr til leið CNC fræsa fyrir skilgreinda vectora/útlínur.
+							Það viðmót verður notað við fræsingu á rétthyrningunum.
+							Förum nú yfir ferlið í Vcarve skref fyrir skref.
+						</p>
+
+						<p>
+							Eftir að Vcarve er opnað er fyrst á dagskrá að skilgreina upphafsstærðir- og skilyrði.
+							Í okkar tilfelli var notuð OSB plata með breidd 135cm, lengd 69.5cm og þykkt 12mm.
+							Núllpunktur z-ás er skilgreindur ofan á yfirborði plötu og xy upphafspunktur niðri í hægra horni.
+						</p>
+
+						<div class="image fit">
+						<img src="images/vcarveupphafsstillingar.JPG" alt="">
+						</div>
+						<br>
+
+						<p>
+							Útlínur úr fusion eru nú importaðar og stillt rétt upp.
+						</p>
+
+						<div class="image fit">
+						<img src="images/vcarveutlinur.JPG" alt="">
+						</div>
+						<br>
+
+						<p>Næst er png mynd af górillu hlaðið upp sem bitmap í Vcarve.</p>
+
+						<div class="image centered">
+						<img src="images/gorilla.png" alt="">
+						</div>
+						<br>
+
+						<p>Til þess að búa til útlínur er notaður "Trace Bitmap" flipinn í Vcarve.
+						Inní því viðmóti eru ýmsar stillingar sem þarf að huga að.
+						Best er að fikta við stillingarnar handahófskennt þar til eftirsóttar útlínur eru gefnar.</p>
+
+						<div class="image fit">
+						<img src="images/gorillautlinur.JPG" alt="">
+						</div>
+						<br>
+
+						<p>Næst er draw text flipinn í vcarve notaður til að búa til vector fyrir útlínur stafa fyrir nöfnin okkar.</p>
+
+						<div class="image fit">
+						<img src="images/stafirutlinur.JPG" alt="">
+						</div>
+						<br>
+
+						<h3>Toolpaths</h3>
+						<p>Næst er það að stilla toolpaths, þ.e. hvernig vectorarnir sem við höfum búið til eru fræstir út.</p>
+						<p>Búið er til 2D Profile til þess að fræsa út kassa.
+
+							<div class="image fit">
+							<img src="images/2dprofile.JPG" alt="">
+							</div>
+							<br>
+
+							Helstu stillingar má sjá hér að ofan. Cut depth er stillt í 12.2 mm til þess að fara í gegnum efnið. Stillum fræsinn þannig hann fer útfyrir kassa, það gerir okkur kleift að sleppa við kerf útreikninga þar sem forritið reiknar það sjálfkrafa miðað við uppgefinn bor.
+							Bætum við 3mm þykkum tabs á 30mm millibili, þetta kemur í veg fyrir að hlutur færist og skaðar skurðinn.
+							<br>
+							Veljum 6mm flatann bita fyrir verkefnið. Mikilvægt er að stilla feeds and speeds rétt, chip load er tala sem þarf að athuga vel. Ef chip load er of hátt er hætta á því að biti brotni, hins vegar getur viður farið að brenna þegar spindilhraði er of mikill og chip load of lágt.
+							Handbók fyrir stillingar á feeds and speeds má finna <a href="https://pub.pages.cba.mit.edu/feed_speeds/">hér</a>.
+						</p>
+
+						<div class="image fit">
+						<img src="images/endmillstill.JPG" alt="">
+						</div>
+						<br>
+
+						<p>
+							Notaður er 60° v-biti fyrir gröfun í efnið.
+							Til þess að ná andlit á górillu vel var búið til úr tveimur toolpaths:
+						</p>
+
+						<p>
+							Fyrir helstu útlínur var notað V-carve/Engraving Toolpath
+
+
+						<div class="image fit">
+						<img src="images/vcarveapi.JPG" alt="">
+						</div>
+						<br>
+
+
+						Til þess að fá detaila frá kinnum og andliti var notað 2D Toolpath með 6mm "cut depth" ofan á útlínur.
+
+
+						<div class="image fit">
+						<img src="images/profileapi.JPG" alt="">
+						</div>
+						<br>
+
+						Fyrir stafi var einnig notað V-Carve/Engraving Toolpath með sama 60° v-bitanum.
+						</p>
+
+						<h3>Fræsing</h3>
+						<p>
+							Nú höfum við undirbúið allar skrár og erum klár fyrir fræsingu á hlutnum. Þegar komið er að fræsi er margt að huga að og mikilvægt uppsetning og einbeiting sé í lagi.
+
+							Þegar komið er að fræsi er fyrst á dagskrá að koma plötu undir fræsi sem fest er með skrúfum 4 skrúfum við borð. <br>
+							Bita og kolletu er svo komið fyrir. Þar sem við viljum byrja á því að grafa í efnið er v-bitanum komið fyrir fyrst.
+
+							<div class="image fit">
+							<img src="images/biti.JPG" alt="">
+							</div>
+							<br>
+
+							<div class="image fit">
+							<img src="images/kolleta.JPG" alt="">
+							</div>
+							<br>
+
+							Næst er fræsir upphafsstilltur, x-y ásarnir eru stilltir með því að handfæra fræsi að einu horni plötunnar, z-ásinn er svo stilltur með málmplötu sem skynjar snertingu odds á bita eins og sýnt er á mynd (mjög nákvæmt).
+							</p>
+
+							<p>
+
+							<div class="image fit">
+							<img src="images/z_as.JPG" alt="">
+							</div>
+							<br>
+
+
+							Næst er fræsir hitaður upp í nokkrar mínútur til þess að hita upp legur og forðast skemmdir.
+
+
+
+							Nú erum við klár fyrir fræsingu og getum keyrt G-Code skrár sem VCarve býr til fyrir okkur úr toolpaths sem við bjuggum til. Byrjum eingöngu á því að grafa í efni með v-bitanum.
+							<br>
+							<br>
+							<div class="image fit">
+							<img src="images/grofun.JPG" alt="">
+							</div>
+							<br>
+
+							Eftir að ferlið klárast er skipt um bita. Setjum undir 6mm flatann og kolletu við.
+							<br>
+							<br>
+							<div class="image fit">
+							<img src="images/bitiogkolleta.JPG" alt="">
+							</div>
+							<br>
+
+							Endurstillum z-ás eins og áður og keyrum G-Code skrár fyrir útlínur kassa.
+							<br>
+							<br>
+							<div class="image fit">
+							<img src="images/utlinurfraesir.JPG" alt="">
+							</div>
+							<br>
+
+							Þegar fræsingin er kláruð brjótum við tabs sem við bjuggum til með hamar og sporjárni og tökum upp útfræstu partana.
+							Tvo parta má sjá hér að neðan:
+							<br>
+							<br>
+							<div class="image fit">
+							<img src="images/apividur.JPG" alt="">
+							</div>
+							<br>
+
+							<div class="image fit">
+							<img src="images/partur2.JPG" alt="">
+							</div>
+							<br>
+
+							</p>
+
+							<h3>	Hlutur settur saman</h3>
+
+							<p>
+							Þar sem við skildum eftir tabs í hlutnum þurfum við að pússa þá niður fyrir sérhvern hlut.
+
+								<div class="image fit">
+								<img src="images/pussun.JPG" alt="">
+								</div>
+								<br>
+							<p>
+							Partarnir eru svo límdir saman með trélími:
+
+							<div class="image fit">
+							<img src="images/trelim.JPG" alt="">
+							</div>
+							<br>
+							</p>
+
+							<h3>Útkoma</h3>
+							<p>
+							Ókláraða útgáfu af útfræstu skjalatöskunni má sjá hér að neðan. Eins og stendur eigum við eftir að koma fyrir handfangi sem og hjörum á töskuna til þess að fullklára verkefnið.
+
+							<div class="image fit">
+							<img src="images/loka1.JPG" alt="">
+							</div>
+							<br>
+							<div class="image fit">
+							<img src="images/loka2.JPG" alt="">
+							</div>
+							<br>
+							<div class="image fit">
+							<img src="images/loka3.JPG" alt="">
+							</div>
+							<br>
+							<div class="image fit">
+							<img src="images/loka4.JPG" alt="">
+							</div>
+							<br>
+							<div class="image fit">
+							<img src="images/loka5.JPG" alt="">
+							</div>
+							<br>
+
+							Við vorum nokkuð sáttir við útkomuna. Það kom okkur á óvart hversu vel fræsirinn náði útlínunum á apanum.
+							Það var lykilatriði þar sem við erum nú skotheldir með hina fullkomnu górillutösku sen hægt er að mæta með í skóla fyrir framlíðandi meistaranám.
+							<br>
+							<br>
+
+							Helstu hönnunarskjöl til þess að endurgera verkefnið okkar má finna á github vefsíðu minni.
+
+
+
+							</p>
+							</p>
+
+
+
+						</p>
 
 
 
